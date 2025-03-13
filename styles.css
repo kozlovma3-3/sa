@@ -1,0 +1,126 @@
+/* Общие стили для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Включаем padding и border в ширину элемента */
+}
+
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(135deg, #667eea, #764ba2); 
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+/* Навигационное меню */
+nav { 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px; 
+    margin: 15px auto; 
+    width: 80%; 
+    max-width: 1200px; /* Фиксированная ширина */
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px; 
+    padding: 12px 25px; 
+    border-radius: 25px; 
+    transition: 0.3s; 
+    font-weight: 500; 
+}
+
+nav a:hover { 
+    background: rgba(255, 255, 255, 0.3); 
+}
+
+/* Секции */
+section {
+    padding: 30px; 
+    background: rgba(255, 255, 255, 0.2); 
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 1200px; /* Фиксированная ширина */
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    flex: 1; 
+}
+
+/* Списки */
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+/* Блоки с программами (увеличиваются) */
+ul.program-list li { 
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 20px; 
+    margin: 10px 0; 
+    border-radius: 12px; 
+    font-size: 16px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    cursor: pointer; 
+}
+
+ul.program-list li:hover { 
+    transform: scale(1.02); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+/* Блоки характеристик (не увеличиваются) */
+ul.program-info li { 
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 20px; 
+    margin: 10px 0; 
+    border-radius: 12px; 
+    font-size: 16px; 
+    cursor: default; /* Отключаем курсор */
+    transform: none !important; /* Отключаем увеличение */
+    box-shadow: none !important; /* Отключаем тень */
+}
+
+/* Футер */
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px; 
+    margin-top: auto; 
+    width: 80%; 
+    max-width: 1200px; /* Фиксированная ширина */
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+footer p { 
+    font-size: 14px; 
+    color: #ffdd57; 
+}
+
+/* Изображения */
+.program-details img { 
+    max-width: 100%; 
+    border-radius: 10px; 
+    margin-top: 20px; 
+}
+
+/* Кнопка "Назад" */
+.back-button { 
+    display: inline-block; 
+    margin-bottom: 20px; 
+    color: #ffdd57; 
+    text-decoration: none; 
+    font-weight: 600; 
+}
+
+.back-button:hover { 
+    text-decoration: underline; 
+}
